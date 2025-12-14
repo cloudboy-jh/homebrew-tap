@@ -5,21 +5,21 @@
 class Pact < Formula
   desc "Pact CLI - Sync your dotfiles and configurations"
   homepage "https://github.com/cloudboy-jh/pact"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cloudboy-jh/pact/releases/download/v0.1.4/pact_0.1.4_darwin_amd64.tar.gz"
-      sha256 "7e48ba59444cbfe0e063c8b56252f848d2bebaa304787ad667fc406b07a88daa"
+      url "https://github.com/cloudboy-jh/pact/releases/download/v0.1.5/pact_0.1.5_darwin_amd64.tar.gz"
+      sha256 "48fc8d4da66582c587a3083bce6900f4834bf6ca396eb2a98359afb9adbc9a6e"
 
       def install
         bin.install "pact"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cloudboy-jh/pact/releases/download/v0.1.4/pact_0.1.4_darwin_arm64.tar.gz"
-      sha256 "80d95f9c40facc3557bf6c255b7fb83e6b3bd8c1c62fce101e5b5dc9604a0877"
+      url "https://github.com/cloudboy-jh/pact/releases/download/v0.1.5/pact_0.1.5_darwin_arm64.tar.gz"
+      sha256 "28aecad824b2c610939b97253e3cf5cf121257a77270f73cdad201e6ce4f8c6b"
 
       def install
         bin.install "pact"
@@ -29,15 +29,15 @@ class Pact < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cloudboy-jh/pact/releases/download/v0.1.4/pact_0.1.4_linux_amd64.tar.gz"
-      sha256 "2b7147cccbac6f6a8f922b2112bf7e22df01eb6ef0ebbccfc6687f0a3329da03"
+      url "https://github.com/cloudboy-jh/pact/releases/download/v0.1.5/pact_0.1.5_linux_amd64.tar.gz"
+      sha256 "163d0b00a5929fd2f561011875d645d4a43f94a27a7ebb629c823c088665e54d"
       def install
         bin.install "pact"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cloudboy-jh/pact/releases/download/v0.1.4/pact_0.1.4_linux_arm64.tar.gz"
-      sha256 "15f19948063b31fa1eea45f1bed524472239284bee0b1632a7e0571fb55bc517"
+      url "https://github.com/cloudboy-jh/pact/releases/download/v0.1.5/pact_0.1.5_linux_arm64.tar.gz"
+      sha256 "bd0e9148bc89fc6b1c736c0310f76b7044fcfc9f44034a1425d1c409e70a3398"
       def install
         bin.install "pact"
       end
