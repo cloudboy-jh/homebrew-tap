@@ -11,7 +11,7 @@ class Pact < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/cloudboy-jh/pact/releases/download/v0.1.11/pact_0.1.11_darwin_amd64.tar.gz"
-      sha256 "5a67746cdbbbc3b176c14f724bad5e7f2c8287da09be858fccf131ea0439d49e"
+      sha256 "24139c462f0e10d6f1793d3a20f77dc6879946ec252b3f849728b1c2333509cf"
 
       def install
         bin.install "pact"
@@ -19,7 +19,7 @@ class Pact < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/cloudboy-jh/pact/releases/download/v0.1.11/pact_0.1.11_darwin_arm64.tar.gz"
-      sha256 "7281796024f875e60f6aa1b58a43adcb02ec383a0de9065ccc2cff1523cafc61"
+      sha256 "58b56af4494b801cdeb5dc42ae7075aa9b9df21a73305df626492530a6e6fdbd"
 
       def install
         bin.install "pact"
@@ -30,14 +30,14 @@ class Pact < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/cloudboy-jh/pact/releases/download/v0.1.11/pact_0.1.11_linux_amd64.tar.gz"
-      sha256 "8f6b18dbf9263b179511fbcf43d28de547bcdf3d5845e02766628e76814ab16f"
+      sha256 "cf5f203b25f6d61978f26353863a761aaded4bd62f299f70f995c0ecd8c1a7be"
       def install
         bin.install "pact"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/cloudboy-jh/pact/releases/download/v0.1.11/pact_0.1.11_linux_arm64.tar.gz"
-      sha256 "7ad0abb24fb30ec06148ae939255adba22a6a461f6d4301b58533cf286a0d14f"
+      sha256 "30eb43f1dd243822e61ab0f9f299cf5d9ecc77cd544c32e21fc4188d1149b801"
       def install
         bin.install "pact"
       end
