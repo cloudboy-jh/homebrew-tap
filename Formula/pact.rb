@@ -5,21 +5,21 @@
 class Pact < Formula
   desc "Pact CLI - Sync your dotfiles and configurations"
   homepage "https://github.com/cloudboy-jh/pact"
-  version "0.1.13"
+  version "0.1.14"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cloudboy-jh/pact/releases/download/v0.1.13/pact_0.1.13_darwin_amd64.tar.gz"
-      sha256 "eb50bad837ddd762199a771133d044eb261d0a9ccab4f386caf3c3212b345b05"
+      url "https://github.com/cloudboy-jh/pact/releases/download/v0.1.14/pact_0.1.14_darwin_amd64.tar.gz"
+      sha256 "a918323da487970fd545e77c4ac8ab091d3086bf5ac026ecbb45df4b6e8468b7"
 
       def install
         bin.install "pact"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cloudboy-jh/pact/releases/download/v0.1.13/pact_0.1.13_darwin_arm64.tar.gz"
-      sha256 "cc9425b01cf7c15cb2fc52af6b58e5982a7ef916602c3eb43a44285f31c13a21"
+      url "https://github.com/cloudboy-jh/pact/releases/download/v0.1.14/pact_0.1.14_darwin_arm64.tar.gz"
+      sha256 "dcfe6ffa67f2ea605bcf0c3d72a0f2e1c9bb33e01843127bc5cf133b395a7612"
 
       def install
         bin.install "pact"
@@ -29,15 +29,15 @@ class Pact < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cloudboy-jh/pact/releases/download/v0.1.13/pact_0.1.13_linux_amd64.tar.gz"
-      sha256 "adabace2d08a4225dd8c19c7692e88677ecbd1b6764d202d3af0c24b1b37466f"
+      url "https://github.com/cloudboy-jh/pact/releases/download/v0.1.14/pact_0.1.14_linux_amd64.tar.gz"
+      sha256 "ab93302fee5a9e7238cc8d2d4b28ee5d757782dc32726197701a8798827dd0b2"
       def install
         bin.install "pact"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cloudboy-jh/pact/releases/download/v0.1.13/pact_0.1.13_linux_arm64.tar.gz"
-      sha256 "52d33e98b03b6b560343ffabefa5602fa8cf892736af74490a2811ef6622d9c2"
+      url "https://github.com/cloudboy-jh/pact/releases/download/v0.1.14/pact_0.1.14_linux_arm64.tar.gz"
+      sha256 "2d95b8eb94728c381b3797064c0515306c3427153cdc73df05afaa1e6fe854b2"
       def install
         bin.install "pact"
       end
